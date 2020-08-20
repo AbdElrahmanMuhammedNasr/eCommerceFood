@@ -1,0 +1,11 @@
+.Home{
+    /* overflow: auto; */
+    margin: 0;
+    padding: 0;
+    width: 99.3vw;
+    height:auto;
+    /* background: linear-gradient(90deg, #00dffc 0%, #008c9e 35%, #005f6b 100%); */
+}
+::-webkit-scrollbar{
+    display: none;
+}
