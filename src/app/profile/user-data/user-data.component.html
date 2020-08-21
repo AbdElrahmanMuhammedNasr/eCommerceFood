@@ -4,6 +4,8 @@
         <br><br>
         <h5>AbdElrahman Muhammed</h5>
         <small>Chef</small>
+        <br>
+        <small>Tanta Egypt</small>
 
         <hr>
         <section class="row" style="margin:auto ;">
@@ -21,10 +23,6 @@
             <li><a href="#">ali</a> </li>
             <li><a href="#">ali</a> </li>
             <li><a href="#">ali</a> </li>
-            <li><a href="#">ali</a> </li>
-            <li><a href="#">ali</a> </li>
-            <li><a href="#">ali</a> </li>
-
         </section>
 
     </section>
@@ -36,8 +34,8 @@
 
                 <h3 style="float: left;">About</h3>
                 <section style=" width: 25%;float: right;" class="row" >
-                    <button class="offset-1 btn btn-outline-secondary">Follow</button>
-                    <button class="offset-1 btn btn-danger">Message</button>
+                    <button class="offset-1 btn btn-outline-secondary" style="border-radius: 15px;">Follow</button>
+                    <button class="offset-1 btn btn-danger" style="border-radius: 15px;">Message</button>
                 </section>
 
             </section>
@@ -54,7 +52,7 @@
         </div>
 
         <!-- /************** posts********************* -->
-        <div class="col-sm-12 row Post">
+        <div class="col-sm-12 row Post" *ngFor="let p of posts">
 
             <section class="col-sm-12">
                 <img style="float: left;" class="userImagePost" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60">
@@ -62,7 +60,7 @@
                 <section class="offset-1">
                     <strong>AbdElrahman</strong> 
                     <br>
-                    <small class="text-muted">2:30am</small>
+                    <small class="text-muted">2:30 am</small>
                 </section>
                
             </section>
@@ -85,6 +83,29 @@
     
      <!-- /*****************************************************************************/ -->
     <section class="col-sm-2 Rate">
+        <p><strong> Products </strong>   </p>
+        <section >
+            <h1>15</h1>
+        </section>
+
+        <hr>
+
+        <p><strong> Clients </strong> </p>
+
+        <section>
+             <h1>15</h1>
+        </section>
+
+        <hr>
+
+
+        <p><strong> Rating </strong> </p>
+
+        <section>
+            <h1>
+                <strong> 8 </strong> 
+            </h1>
+        </section>
 
     </section>
 

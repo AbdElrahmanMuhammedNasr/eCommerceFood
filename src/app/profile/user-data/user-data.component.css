@@ -2,7 +2,8 @@
     background-color: #e8eaeb;
     box-shadow: 0px 0px 10px #a7a7a7;
     text-align: center;
-    padding:20px
+    padding:20px;
+    height: 100vh;
     
 }
 .User .userImage{
@@ -21,6 +22,13 @@
     background-color: #cecece;
     margin:auto;
     overflow: hidden;
+}
+.User li:hover{
+    background: linear-gradient(to right, #002fff, #08c4d1);
+}
+
+.User li a:hover{
+    color: white;
 }
 
 .User li a{
@@ -63,5 +71,20 @@
     background-color: #e8eaeb;
     padding: 20px;
     box-shadow: 0px 0px 10px #a7a7a7;
+    text-align: center;
+    height: 100vh;
 
+
+}
+.Rate section{
+    width: 200px; 
+    height: 200px;
+    border-radius: 50% ;
+    margin:auto;
+    border: 3px solid  #00ffb3;
+    background: linear-gradient(to right, #002fff, #08c4d1);
+
+}
+.Rate section h1{
+    line-height: 20vh;
 }

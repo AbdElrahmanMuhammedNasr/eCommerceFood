@@ -9,7 +9,9 @@ export class UserDataComponent implements OnInit {
 
   constructor() { }
 
+  posts =[];
   ngOnInit(): void {
+    this.posts=[1,1,1,1,1,11,1,1,]
   }
 
 }

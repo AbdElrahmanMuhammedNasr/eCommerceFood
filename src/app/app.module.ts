@@ -25,7 +25,11 @@ import { ProductsComponent } from './profile/products/products.component';
 import { CommentsComponent } from './profile/comments/comments.component';
 import { ProductComponent } from './profile/products/product/product.component';
 import { CommentComponent } from './profile/comments/comment/comment.component';
-import { ReplyCommentComponent } from './profile/comments/reply-comment/reply-comment.component'
+import { ReplyCommentComponent } from './profile/comments/reply-comment/reply-comment.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { CategoryComponent } from './home/category/category.component';
+import { SnapshotPorductsComponent } from './home/snapshot-porducts/snapshot-porducts.component';
+import { ProductDetailsComponent } from './home/snapshot-porducts/product-details/product-details.component';
 
 
 
@@ -47,6 +51,10 @@ import { ReplyCommentComponent } from './profile/comments/reply-comment/reply-co
     ProductComponent,
     CommentComponent,
     ReplyCommentComponent,
+    SignUpComponent,
+    CategoryComponent,
+    SnapshotPorductsComponent,
+    ProductDetailsComponent,
 
   ],
   imports: [

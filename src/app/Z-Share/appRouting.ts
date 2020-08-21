@@ -8,11 +8,20 @@ import { ProfileComponent } from '../profile/profile.component';
 import { UserDataComponent } from '../profile/user-data/user-data.component';
 import { ProductsComponent } from '../profile/products/products.component';
 import { CommentsComponent } from '../profile/comments/comments.component';
+import { SignUpComponent } from '../sign-up/sign-up.component';
+import { CategoryComponent } from '../home/category/category.component';
+import { SnapshotPorductsComponent } from '../home/snapshot-porducts/snapshot-porducts.component';
+import { ProductDetailsComponent } from '../home/snapshot-porducts/product-details/product-details.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
+  {path: '', redirectTo: '/home/category', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent, children:[
+    {path: 'category', component: CategoryComponent},
+    {path: 'snapshot', component: SnapshotPorductsComponent},
+    {path:'productDetails', component:ProductDetailsComponent }
+
+  ]},
   {path: 'notification', component: NotificationsComponent},
   {path: 'history', component: HistoryCartComponent},
   {path: 'profile', component: ProfileComponent, children:[
@@ -21,6 +30,7 @@ const routes: Routes = [
     {path: 'comments', component: CommentsComponent},
   ]},
   {path: 'login', component: LoginComponent},
+  {path: 'signUp', component: SignUpComponent},
 
 ];
 

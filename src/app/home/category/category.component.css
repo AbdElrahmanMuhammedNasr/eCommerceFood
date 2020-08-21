@@ -1,0 +1,16 @@
+.Category{
+    cursor: pointer;
+    border-bottom:5px solid;
+    border-bottom-color: black;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    margin: 30px auto;
+
+}
+
+.Category .CatImage{
+    width: 100%;
+    height: 30vh;
+    margin: 20px 0px;
+}

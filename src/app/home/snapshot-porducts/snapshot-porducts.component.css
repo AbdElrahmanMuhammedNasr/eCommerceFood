@@ -1,0 +1,21 @@
+.Product{
+    cursor: pointer;
+    width:200px;
+    height:51vh;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+
+
+  }
+  .ProductImg{
+    width: 100%;
+    height: 70%;
+    border-radius: 30px 0px;
+    margin-bottom: 6px;
+  }
+  .ExpressImg{
+      width: 30%;
+      margin: 0px 20px;
+      /*size: 20px;*/
+  }

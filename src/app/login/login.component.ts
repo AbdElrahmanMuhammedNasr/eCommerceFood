@@ -21,5 +21,6 @@ export class LoginComponent implements OnInit {
   }
 
   onGoToSignUpForm() {
+    this.router.navigate(['/signUp'])
   }
 }
