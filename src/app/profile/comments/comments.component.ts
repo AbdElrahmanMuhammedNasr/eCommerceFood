@@ -8,10 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CommentsComponent implements OnInit {
 
   constructor() { }
-  comments =[]
 
   ngOnInit(): void {
-    this.comments = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
   }
 
 }

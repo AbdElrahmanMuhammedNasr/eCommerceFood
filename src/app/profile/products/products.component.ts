@@ -9,9 +9,7 @@ export class ProductsComponent implements OnInit {
 
   constructor() { }
 
-  products = [];
   ngOnInit(): void {
-    this.products =[1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1]
   }
 
 }
