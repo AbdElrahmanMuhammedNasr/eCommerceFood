@@ -1,24 +1,29 @@
 <div class="row" style="width: 90% ; margin: auto ; ">
     <section class="col-sm-4 col-12" style="margin-top: 20px; min-height: 20px;">
-      <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60">
+      <img [src]="singleProduct.image">
     </section>
 
     <section class="col-sm-4  col-12" style="border: 1px solid lightgray; padding: 20px;margin-top: 20px">
-        <p class="text-muted" style="font-size:13px">type</p>
+        <p class="text-muted" style="font-size:13px">{{singleProduct.categoryType}}</p>
         <section style="padding-left: 15px">
-          <h6>name</h6>
+          <h6>{{singleProduct.name}}</h6>
   
-          <section style="margin-top: 15px">
-            <p > <small class="text-muted" style="font-size:15px">was:</small> <del style="font-size: 15px"> 500  EGP</del></p>
-            <p> <small class="text-muted" style="font-size:15px">Now:</small> <strong style="font-size: 20px">300 EGP</strong></p>
-            <p > <small class="text-muted" style="font-size:15px">Save:</small> 200 EGP <small style="background-color: #b3f65d; color: green;padding: 5px">20 %Off</small></p>
+          <section style="margin-top: 15px" *ngIf='singleProduct.discount'>
+            <p > <small class="text-muted" style="font-size:15px">was: </small> <del style="font-size: 15px"> {{singleProduct.price}}  EGP</del></p>
+            <p> <small class="text-muted" style="font-size:15px">Now: </small> <strong style="font-size: 20px"> {{singleProduct.price - singleProduct.discount}} EGP</strong></p>
+            <p > <small class="text-muted" style="font-size:15px">Save: </small> {{singleProduct.discount}} EGP <small style="background-color: #b3f65d; color: green;padding: 5px">{{(singleProduct.discount / singleProduct.price ) *100 }} %Off</small></p>
           </section>
+        </section>
+
+        <section   *ngIf='!singleProduct.discount'>
+          <p> <small class="text-muted" style="font-size:15px">Price: </small> <strong style="font-size: 20px"> {{singleProduct.price }} EGP</strong></p>
+
         </section>
 
     
 
       <hr>
-      <h6> Location <strong style="color: green">Cairo</strong> </h6>
+      <h6> Location <strong style="color: green">{{singleProduct.location}}</strong> </h6>
       <hr>
 
 
@@ -36,11 +41,7 @@
     <section class="col-sm-4 col-12" style=" margin-top: 20px;text-align:center">
         <h3 style="background-color: #22a0f3; color: white;">Ingredients</h3>
         <ul class="list-group">
-          <li class="list-group-item ">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item" *ngFor="let ing of singleProduct.ingregients">{{ing}}</li>
         </ul>
 
     </section>
@@ -49,15 +50,8 @@
     <div class="col-sm-12" style="margin-top:5vh ">
       <h3>OVERVIEW</h3>
       <ul>
-        <li > List of review </li>
-        <li > List of review </li>
-        <li > List of review </li>
-        <li > List of review </li>
-        <li > List of review </li>
-        <li > List of review </li>
+        <li *ngFor="let overview of singleProduct.overview"> {{overview}} </li>
       </ul>
-
-      
     </div>
 
   </div>

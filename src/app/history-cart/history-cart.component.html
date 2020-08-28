@@ -17,14 +17,14 @@
                 </thead>
                 <tbody >
                   <tr  *ngFor="let cart of carts; let i = index">
-                    <th scope="row">{{i}}</th>
-                    <td> <img src ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_qQNX1BpIFTRUuFWP-HrDAQv_sdia2y8EffQHxArvPT4FlIw&s' style="width: 100px; height: 60px;  border-radius: 20px 0px; "> </td>
+                    <th scope="row">{{i+1}}</th>
+                    <td> <img [src] ='cart.image' style="width: 100px; height: 60px;  border-radius: 20px 0px; "> </td>
 
-                    <td>  <strong> Rice </strong>   </td>
+                    <td>  <strong> {{cart.name}} </strong>   </td>
 
-                    <td>3:30 PM </td>
-                    <td> 20  EGP</td>
-                    <td> <a routerLink="/profile"> Abdo Nasr </a> </td>
+                    <td>{{cart.time}}</td>
+                    <td> {{cart.price }} EGP</td>
+                    <td> <a routerLink="/profile"> {{cart.chef}} </a> </td>
                   </tr>
                 </tbody>
               </table>
@@ -41,13 +41,13 @@
                     <ul class="list-group">
                         <li class="list-group-item" style="border: 1px solid #d1d0d0">
                             <h5>Total Orders</h5>
-                            <small style="float:right ; font-size: 20px"> 20 Orders</small>
+                            <small style="float:right ; font-size: 20px"> {{carts.length}} Orders</small>
                         </li>
                       <br>
 
                         <li class="list-group-item" style="border: 1px solid #d1d0d0">
                             <h5>Total Price</h5>
-                            <small style="float:right ; font-size: 20px;"> 200 EGP</small>
+                            <small style="float:right ; font-size: 20px;"> {{totalPrice }} EGP</small>
                         </li>
 
 

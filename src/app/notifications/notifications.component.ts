@@ -9,11 +9,8 @@ export class NotificationsComponent implements OnInit {
 
   constructor() { }
 
-  nots = [];
   filterOn = false;
   ngOnInit(): void {
-   this.nots = [2,1,2,3,45,5,9,8,4,1,1];
-
   }
 
 }
