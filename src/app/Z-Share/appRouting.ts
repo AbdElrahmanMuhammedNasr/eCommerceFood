@@ -12,6 +12,7 @@ import { SignUpComponent } from '../sign-up/sign-up.component';
 import { CategoryComponent } from '../home/category/category.component';
 import { SnapshotPorductsComponent } from '../home/snapshot-porducts/snapshot-porducts.component';
 import { ProductDetailsComponent } from '../home/snapshot-porducts/product-details/product-details.component';
+import { AddProductComponent } from '../profile/add-product/add-product.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
     {path: 'userData', component: UserDataComponent},
     {path: 'products', component: ProductsComponent},
     {path: 'comments', component: CommentsComponent},
+    {path: 'add', component: AddProductComponent},
   ]},
   {path: 'login', component: LoginComponent},
   {path: 'signUp', component: SignUpComponent},

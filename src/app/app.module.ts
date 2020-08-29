@@ -30,6 +30,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { CategoryComponent } from './home/category/category.component';
 import { SnapshotPorductsComponent } from './home/snapshot-porducts/snapshot-porducts.component';
 import { ProductDetailsComponent } from './home/snapshot-porducts/product-details/product-details.component';
+import { AddProductComponent } from './profile/add-product/add-product.component';
 
 
 
@@ -55,6 +56,7 @@ import { ProductDetailsComponent } from './home/snapshot-porducts/product-detail
     CategoryComponent,
     SnapshotPorductsComponent,
     ProductDetailsComponent,
+    AddProductComponent,
 
   ],
   imports: [

@@ -1,0 +1,97 @@
+ <div class="form-row" style="height: auto">
+   <div class="container MyContainer">
+
+     <form (ngSubmit)="onAddNewProduct()" #AddNewPro="ngForm">
+       <div class="form-row">
+         <div class="col-md-12 mb-3">
+           <input type="file" class="form-control" ngModel name="image" (change)="showPreviewImage($event)">
+         </div>
+       </div>
+
+       <!--/**********************************************************************************************************/-->
+       <div class="form-row">
+         <div class="col-md-4 mb-3">
+           <label>Name</label>
+           <input type="text" class="form-control" placeholder="Name" ngModel name="name" required minlength="7"
+             #FirstNameValidation="ngModel">
+         </div>
+         <div class="col-md-4 mb-3">
+           <label>Price</label>
+           <input type="text" class="form-control" placeholder="Price" ngModel name="price" required minlength="2"
+             #LastNameValidation="ngModel">
+         </div>
+
+         <div class="col-md-4 mb-3">
+           <label>Discount</label>
+           <input type="number" class="form-control" placeholder="discount" ngModel name="discount" required
+             minlength="3">
+         </div>
+       </div>
+       <!--/**********************************************************************************************************/-->
+       <div class="form-row">
+         <div class="col-md-12 mb-3">
+           <label>Time</label>
+           <input type="number" class="form-control" placeholder="time to prepare order" ngModel name="time" required
+             minlength="3" #TimeValidation="ngModel">
+         </div>
+       </div>
+       <!--/**********************************************************************************************************/-->
+
+
+       <div class="form-row">
+         <div class="col-md-12 mb-12">
+           <label>Select Category</label>
+
+           <div class="input-group mb-3">
+             <div class="input-group-prepend">
+               <label class="input-group-text">Category</label>
+             </div>
+             <select class="custom-select" ngModel name="selectedCategory">
+               <option *ngFor="let option of category" [value]="option">{{option}}</option>
+             </select>
+           </div>
+         </div>
+
+       </div>
+       <!--/**********************************************************************************************************/-->
+
+
+       <!--/**********************************************************************************************************/-->
+
+       <div class="form-row">
+         <div class="col-md-12 mb-12">
+           <label>Product Address</label>
+           <input type="text" class="form-control " placeholder="Please Be More Spicfic" ngModel name="address" required
+             #AddressValidation="ngModel">
+         </div>
+
+       </div>
+       <!--/**********************************************************************************************************/-->
+
+
+       <div class="form-row">
+         <div class="col-md-12 mb-12">
+           <label>Product Overview</label>
+           <input type="text" class="form-control " placeholder="Overview about product" ngModel name="Overview"
+             required>
+         </div>
+
+       </div>
+       <!--/**********************************************************************************************************/-->
+
+       <div class="form-row">
+         <div class="col-md-12 mb-12">
+           <label>Ingredients</label>
+           <input type="text" class="form-control" placeholder="Ingredients splited with   *  " ngModel name="inger"
+             required #ingredientsValidation="ngModel">
+
+         </div>
+
+       </div>
+       <br>
+
+       <button class="btn btn-primary">Add</button>
+
+     </form>
+
+   </div>
