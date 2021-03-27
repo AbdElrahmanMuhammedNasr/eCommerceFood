@@ -1,0 +1,11 @@
+.Comment{
+    padding: 0px 50px;
+    margin: 30px 0px;
+    /* background-color: green; */
+
+}
+.Comment .commentImage{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

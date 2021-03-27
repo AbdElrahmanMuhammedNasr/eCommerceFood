@@ -1,0 +1,28 @@
+<div class="row Comment" *ngFor="let c of comments">
+    <img  class="commentImage" [src]="c.image">
+     <section class="col-sm-11  row" style="padding-top:5px">
+            <section class="col-sm-12">
+                <div style="float: left;">
+                    <span><strong>{{c.name}}</strong> </span>  : <span class="text-muted">{{c.time}}</span>
+                </div>
+                <div style="float: right;cursor: pointer;">
+                    <span class="fa fa-ellipsis-h"></span>
+                </div>
+            </section> 
+            
+            <section class="col-sm-12" style="padding-top:10px">
+                <p> {{c.comment}} </p>
+            </section>
+            <section class="col-sm-12">
+                <span class="text-muted" style="float: left; cursor: pointer">reply</span>
+                <!-- <span *ngIf="displayReply" class="text-muted fa fa-sort-desc" style="float: right; cursor: pointer;" (click) = "displayReply = !displayReply "></span> -->
+                <!-- <span *ngIf="!displayReply" class="text-muted fa fa-sort-asc" style="float: right; cursor: pointer;" (click) = "displayReply = !displayReply "></span> -->
+            </section>
+     </section>   
+        <div class="container" *ngIf="!displayReply">
+            <app-reply-comment></app-reply-comment>
+        </div>
+</div>
+
+
+<hr>

@@ -1,0 +1,11 @@
+<div  style="width: 85%; margin: 90px auto; background-color: white;">
+    <span class="fa fa-tasks" style="font-size: 25px; cursor: pointer;" (click)="filterOn = !filterOn"></span>
+
+    <div *ngIf="filterOn" style="border: 2px soild black; height: auto; width: 100%; text-align: center;">
+
+        <input class="form-control" style="width: 50%; margin: auto; text-align: center;" placeholder="Search By Name Or Order Or Time Or Accept">
+         
+    </div>
+
+    <app-single-notifications></app-single-notifications>
+</div>

@@ -1,0 +1,57 @@
+<div class="row" style="width: 90% ; margin: auto ; ">
+    <section class="col-sm-4 col-12" style="margin-top: 20px; min-height: 20px;">
+      <img [src]="singleProduct.image">
+    </section>
+
+    <section class="col-sm-4  col-12" style="border: 1px solid lightgray; padding: 20px;margin-top: 20px">
+        <p class="text-muted" style="font-size:13px">{{singleProduct.categoryType}}</p>
+        <section style="padding-left: 15px">
+          <h6>{{singleProduct.name}}</h6>
+  
+          <section style="margin-top: 15px" *ngIf='singleProduct.discount'>
+            <p > <small class="text-muted" style="font-size:15px">was: </small> <del style="font-size: 15px"> {{singleProduct.price}}  EGP</del></p>
+            <p> <small class="text-muted" style="font-size:15px">Now: </small> <strong style="font-size: 20px"> {{singleProduct.price - singleProduct.discount}} EGP</strong></p>
+            <p > <small class="text-muted" style="font-size:15px">Save: </small> {{singleProduct.discount}} EGP <small style="background-color: #b3f65d; color: green;padding: 5px">{{(singleProduct.discount / singleProduct.price ) *100 }} %Off</small></p>
+          </section>
+        </section>
+
+        <section   *ngIf='!singleProduct.discount'>
+          <p> <small class="text-muted" style="font-size:15px">Price: </small> <strong style="font-size: 20px"> {{singleProduct.price }} EGP</strong></p>
+
+        </section>
+
+    
+
+      <hr>
+      <h6> Location <strong style="color: green">{{singleProduct.location}}</strong> </h6>
+      <hr>
+
+
+      <br>
+      <h6 class="text-muted">Quantity</h6>
+      <form>
+        <section class="row">
+          <input type="number" style="width: 50px; margin: 0px 20px" value="1"><br><br>
+        </section><br>
+        <button class="col btn btn-primary" >Order</button>
+      </form>
+
+    </section >
+
+    <section class="col-sm-4 col-12" style=" margin-top: 20px;text-align:center">
+        <h3 style="background-color: #22a0f3; color: white;">Ingredients</h3>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let ing of singleProduct.ingregients">{{ing}}</li>
+        </ul>
+
+    </section>
+ 
+
+    <div class="col-sm-12" style="margin-top:5vh ">
+      <h3>OVERVIEW</h3>
+      <ul>
+        <li *ngFor="let overview of singleProduct.overview"> {{overview}} </li>
+      </ul>
+    </div>
+
+  </div>

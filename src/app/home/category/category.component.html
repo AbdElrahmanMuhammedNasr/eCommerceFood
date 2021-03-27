@@ -1,0 +1,15 @@
+<div style="text-align: center;width:90%; margin: auto; " >
+
+    <div class="row" *ngFor="let oneCategorys of category" >
+        <h1>{{oneCategorys[0].mainCategory}}</h1> 
+        <div class="col-sm-12" ></div>
+
+
+        <div  class=" Category" *ngFor="let oneCategory of oneCategorys" (click)="onGoToSnapShot()"  >
+            <img class="CatImage" [src]="oneCategory.categoryImage">
+            <h3>{{oneCategory.categoryName}}</h3>
+        </div>
+    </div>
+   
+</div>
+

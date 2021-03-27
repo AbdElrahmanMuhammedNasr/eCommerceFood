@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "hommey-front"
+  "defaultProject": "hommey-front",
+  "cli": {
+    "analytics": false
+  }
 }

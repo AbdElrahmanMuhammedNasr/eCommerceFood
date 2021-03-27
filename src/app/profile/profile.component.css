@@ -1,0 +1,44 @@
+.Content{
+    width: 92%;
+    height: auto;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 2px solid #c7c7c7;
+    overflow: hidden;
+    padding:30px
+
+}
+.Content .ShortDetails {
+    background-color: #ececec;
+    padding:10px 8%;
+    text-align: center;
+
+}
+.Content .ShortDetails .userImage{
+    width: 15vw;
+    height: 28vh;
+    border-radius: 50%;
+   
+}
+.Content .ShortDetails .UserName {
+    padding:3% 0px;
+    /* text-align: center; */
+}
+.Content .ShortDetails .UserName h3{
+}
+/*******************************************/
+
+.Content .Filter{
+    padding:0px 0px 0px 0px;
+    width: 80%;
+    margin:auto ;
+    text-align: center;
+
+}
+.Content .Filter ul {
+    
+}
+.Content .Filter ul li{
+    list-style-type:none
+    
+}
