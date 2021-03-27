@@ -4,13 +4,13 @@
     text-align: center;
     padding:20px;
     height: 100vh;
-    
+
 }
 .User .userImage{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-   
+
 }
 
 .User li{
@@ -33,19 +33,19 @@
 
 .User li a{
     list-style-type: none;
-    font-style: 30px;
 
 }
 /*********************************************/
 
-.More{
-    margin:10px   auto;
+.More {
+  margin: 10px auto;
 
 }
-.More .AboutMe  { 
-    background-color: #e8eaeb;
-    padding: 20px;
-    box-shadow: 0px 0px 10px #a7a7a7;
+
+.More .AboutMe {
+  background-color: #e8eaeb;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #a7a7a7;
 
 }
 
@@ -76,14 +76,4 @@
 
 
 }
-.Rate section{
-    width: 200px; 
-    height: 200px;
-    border-radius: 50% ;
-    margin:auto;
-    border: 3px solid  #00aeff;
 
-}
-.Rate section h1{
-    line-height: 20vh;
-}

@@ -2,7 +2,7 @@
 
     <div class="col-sm-2 Product" *ngFor="let productShapshot of productShapshots" (click)='onGoToDetails()'>
         <img class="ProductImg" [src]="productShapshot.image">
-        <p class="card-text text-muted" style="font-size: 13px">{{productShapshot.name}}</p>
+        <p class="card-text text-muted" style="font-size: large">{{productShapshot.name}}</p>
         <p><small> EGP </small>  <strong> {{productShapshot.price - productShapshot.discount}}</strong> </p>
 
         <small *ngIf='productShapshot.discount'  class="col" style="padding: 5px; background-color: #b3f65d; color: green">EGP {{  productShapshot.discount}} off</small>

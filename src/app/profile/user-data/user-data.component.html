@@ -1,20 +1,20 @@
 <div class="row" >
-    <section  class="col-sm-2 User">
-        <img class="userImage" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=60">
-        <br><br>
-        <h5><strong> {{userData.name}} </strong> </h5>
-        <small>{{userData.job}}</small>
-        <br>
-        <small>{{userData.location}}</small>
+    <section class="col-sm-2 User">
+      <img class="userImage" src="../../assets/3.jpeg">
+      <br><br>
+      <h5><strong> {{userData.name}} </strong></h5>
+      <small>{{userData.job}}</small>
+      <br>
+      <small>{{userData.location}}</small>
 
-        <hr>
-        <section class="row" style="margin:auto ;">
-            <p class="col-sm-12">Contact us</p>
+      <hr>
+      <section class="row" style="margin:auto ;">
+        <p class="col-sm-12">Contact us</p>
 
-            <li><a [href]="userData.socialMedia[0]"  class="fa fa-facebook"></a> </li> 
-            <li><a [href]="userData.socialMedia[1]"   class="fa fa-youtube"></a> </li> 
-       
-        </section>
+        <li><a [href]="userData.socialMedia[0]" class="fa fa-facebook"></a></li>
+        <li><a [href]="userData.socialMedia[1]" class="fa fa-youtube"></a></li>
+
+      </section>
         <hr>
 
 
@@ -35,7 +35,7 @@
             <section class="col-sm-12">
                 <textarea class="form-control" style="min-height: 100px; max-height: 100px;"> </textarea>
                 <br>
-                <button class="btn btn-primary" >Share</button>
+              <button class="btn btn-primary">Post</button>
             </section>
         </div>
         <br><br>
@@ -43,15 +43,9 @@
 
         <div class="col-sm-12 AboutMe row">
             <section class="col-sm-12">
-
                 <h3 style="float: left;">About</h3>
-                <!-- <section style="width: 10%;float: right;" class="row" >
-                    <button class="offset-1 btn btn-outline-primary" style="border-radius: 5px;">Follow</button>
-                </section> -->
-
             </section>
 
-            
             <section class="col-sm-12" style="margin-top:20px">
                {{userData.about}}
             </section>
@@ -60,17 +54,16 @@
         <!-- /************** posts********************* -->
         <div class="col-sm-12 row Post" *ngFor="let p of posts">
 
-            <section class="col-sm-12">
-                <img style="float: left;" class="userImagePost" [src]="p.image">
-               
-                <section class="offset-1">
-                    <strong>{{p.name}}</strong> 
-                    <br>
-                    <small class="text-muted">{{p.time}}</small>
-                </section>
-               
+          <section class="col-sm-12">
+            <img style="float: left;" class="userImagePost" [src]="p.image">
+
+            <section class="offset-1">
+              <strong>{{p.name}}</strong>
+              <span> . {{p.time}}</span>
             </section>
-           
+
+          </section>
+
             <section class="col-sm-12"  style="margin-top:20px">
                 {{p.post}}
             </section>
@@ -81,32 +74,22 @@
 
 
     </section>
-    
+
      <!-- /*****************************************************************************/ -->
     <section class="col-sm-2 Rate">
         <p><strong> Products </strong>   </p>
-        <section >
-            <h1>{{process.products}}</h1>
-        </section>
+      <h3 class="align-self-center">{{process.products}}</h3>
 
         <hr>
 
         <p><strong> Clients </strong> </p>
+      <h3 class="align-self-center">{{process.clients}}</h3>
 
-        <section>
-             <h1>{{process.clients}}</h1>
-        </section>
-
-        <hr>
+      <hr>
 
 
         <p><strong> Rating </strong> </p>
-
-        <section>
-            <h1>
-                <strong> {{process.rating}} </strong> 
-            </h1>
-        </section>
+      <h3 class="align-self-center">{{process.rating}}</h3>
 
     </section>
 

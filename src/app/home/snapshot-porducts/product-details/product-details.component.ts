@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-product-details',
@@ -11,28 +11,28 @@ export class ProductDetailsComponent implements OnInit {
 
   singleProduct = {
     image: '',
-    name:'',
-    price:0,
+    name: '',
+    price: 0,
     discount: 0,
-    categoryType:'',
-    location:'',
-    ingregients:[],
-    overview:[]
-  }
+    categoryType: '',
+    location: '',
+    ingredients: [],
+    overview: []
+  };
 
   ngOnInit(): void {
     this.singleProduct = {
-      image:'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
+      image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
       name: 'Stack',
       price: 100,
       discount: 20,
       categoryType: 'meat',
       location: 'Tanta',
-      ingregients: ['meat','sault','water','coca'],
-      overview:['verg good so far',' not fatty for body','verg good so far',' not fatty for body',],
+      ingredients: ['meat', 'sault', 'water', 'coca', 'meat', 'sault', 'water', 'coca', 'meat', 'sault', 'water', 'coca', 'coca', 'meat', 'sault', 'water', 'coca'],
+      overview: ['verg good so far', ' not fatty for body', 'verg good so far', ' not fatty for body', 'verg good so far', ' not fatty for body', 'verg good so far', ' not fatty for body', 'verg good so far', ' not fatty for body', 'verg good so far', ' not fatty for body'],
 
-    }
-    
+    };
+
   }
 
 }

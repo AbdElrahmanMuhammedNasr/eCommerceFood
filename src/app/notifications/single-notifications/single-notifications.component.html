@@ -1,28 +1,27 @@
 <div class="row Single" *ngFor="let noti of notifications">
-    <img  class="Image"  [src]="noti.image">
+    <img  class="Image align-self-center"  [src]="noti.image">
 
-    <section class="col" style="line-height: 10vh; padding-left: 50px;">
+    <section class="col align-self-center" style=" padding-left: 50px;">
+
         <a style="padding:10px; font-size: 23px;" href="#" > {{noti.name}}</a>
-
-        <span *ngIf="noti.type == 'order' || noti.type == 'timeOut'" style="padding:10px; font-size: 23px; color: #4242f1;"> Order {{noti.order}}  </span> 
-        <span *ngIf="noti.type == 'response' " style="padding:10px; font-size: 23px; color: #4242f1;"> {{noti.response}} </span> 
-       
-       
+        <span *ngIf="noti.type == 'order' || noti.type == 'timeOut'" style="padding:10px; font-size: 23px; color: #4242f1;"> Order {{noti.order}}  </span>
+        <span *ngIf="noti.type == 'response' " style="padding:10px; font-size: 23px; color: #4242f1;"> {{noti.response}} </span>
         <span style="padding:10px"> <strong> {{noti.time}}</strong> will end in <strong> {{noti.timeout}}</strong>  </span>
-    </section>
-
-    <section class="col-sm-5  row"  *ngIf="noti.type == 'order' ">  
-      <button  class="col-sm-5  btn btn-primary">Accept</button>
-      <button  class="col-sm-5 offset-1 btn btn-danger">Refuse</button>
-    </section>
-
-
-    <section class="col-sm-5  row"  *ngIf="noti.type == 'response' ">  
-      <h3 style="margin:30px auto; color: #0034c3;">You can go and get Your Food  </h3>
 
     </section>
 
-    <section class="col-sm-5  row"  *ngIf="noti.type == 'timeOut' ">  
-     <h3 style="margin:30px auto; color: red;">Time Out</h3>
+    <section class="col-sm-5  row"  *ngIf="noti.type == 'order' ">
+      <button  class="col-sm-5  btn btn-primary align-self-center">Accept</button>
+      <button  class="col-sm-5 offset-1 btn btn-danger align-self-center">Refuse</button>
+    </section>
+
+
+    <section class="col-sm-5  row"  *ngIf="noti.type == 'response' ">
+      <h3 class="align-self-center" style="margin:30px auto; color: #0034c3;">You can go and get Your Order  </h3>
+
+    </section>
+
+    <section class="col-sm-5  row"  *ngIf="noti.type == 'timeOut' ">
+     <h3 class="align-self-center" style="margin:30px auto; color: red;">Time Out</h3>
     </section>
   </div>

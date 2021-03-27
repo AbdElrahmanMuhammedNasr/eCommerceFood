@@ -8,10 +8,10 @@
 }
 
 .Single .Image{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
-}   
+}
 .Single button{
     margin-top:3vh;
     height: 5vh;

@@ -15,10 +15,10 @@
 
 }
 .Content .ShortDetails .userImage{
-    width: 15vw;
-    height: 28vh;
+    width: 17vw;
+    height: 17vw;
     border-radius: 50%;
-   
+
 }
 .Content .ShortDetails .UserName {
     padding:3% 0px;
@@ -36,9 +36,9 @@
 
 }
 .Content .Filter ul {
-    
+
 }
 .Content .Filter ul li{
     list-style-type:none
-    
+
 }

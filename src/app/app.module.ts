@@ -8,13 +8,6 @@ import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import {AppRouting} from './Z-Share/appRouting';
 
-;
-
-
-import { AngularFireModule } from "@angular/fire";
-import { environment } from "../environments/environment.prod";
-
-import {StoreModule} from '@ngrx/store';
 import { HomeComponent } from './home/home.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { HistoryCartComponent } from './history-cart/history-cart.component';
@@ -31,6 +24,7 @@ import { CategoryComponent } from './home/category/category.component';
 import { SnapshotPorductsComponent } from './home/snapshot-porducts/snapshot-porducts.component';
 import { ProductDetailsComponent } from './home/snapshot-porducts/product-details/product-details.component';
 import { AddProductComponent } from './profile/add-product/add-product.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -57,6 +51,7 @@ import { AddProductComponent } from './profile/add-product/add-product.component
     SnapshotPorductsComponent,
     ProductDetailsComponent,
     AddProductComponent,
+    FooterComponent,
 
   ],
   imports: [
@@ -66,7 +61,7 @@ import { AddProductComponent } from './profile/add-product/add-product.component
     HttpClientModule,
     // StoreModule.forRoot({}),
 
-    
+
   ],
   providers: [ ],
   bootstrap: [AppComponent]
