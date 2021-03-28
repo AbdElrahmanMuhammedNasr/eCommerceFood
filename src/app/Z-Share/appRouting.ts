@@ -17,15 +17,15 @@ import { AddProductComponent } from '../profile/add-product/add-product.componen
 
 const routes: Routes = [
   {path: '', redirectTo: '/home/category', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent, children:[
+  {path: 'home', component: HomeComponent, children: [
     {path: 'category', component: CategoryComponent},
     {path: 'snapshot', component: SnapshotPorductsComponent},
-    {path:'productDetails', component:ProductDetailsComponent }
+    {path: 'productDetails', component: ProductDetailsComponent }
 
   ]},
   {path: 'notification', component: NotificationsComponent},
   {path: 'history', component: HistoryCartComponent},
-  {path: 'profile', component: ProfileComponent, children:[
+  {path: 'profile', component: ProfileComponent, children: [
     {path: 'userData', component: UserDataComponent},
     {path: 'products', component: ProductsComponent},
     {path: 'comments', component: CommentsComponent},

@@ -2,36 +2,28 @@
     <section class="col-sm-2 User">
       <img class="userImage" src="../../assets/3.jpeg">
       <br><br>
-      <h5><strong> {{userData.name}} </strong></h5>
+      <p><strong> {{userData.name}} </strong></p>
       <small>{{userData.job}}</small>
       <br>
       <small>{{userData.location}}</small>
 
       <hr>
-      <section class="row" style="margin:auto ;">
+      <section class="row">
         <p class="col-sm-12">Contact us</p>
 
-        <li><a [href]="userData.socialMedia[0]" class="fa fa-facebook"></a></li>
-        <li><a [href]="userData.socialMedia[1]" class="fa fa-youtube"></a></li>
+        <section class="d-flex justify-content-around w-100">
+          <a [href]="userData.socialMedia[0]" style="font-size: x-large" class="fa fa-facebook"></a>
+          <a [href]="userData.socialMedia[1]" style="font-size: x-large" class="fa fa-youtube"></a>
+        </section>
 
       </section>
-        <hr>
-
-
-        <!-- <section class="row" style="margin:auto ;">
-            <p class="col-sm-12">Customer</p>
-            <li><a href="#">ali</a> </li>
-            <li><a href="#">ali</a> </li>
-            <li><a href="#">ali</a> </li>
-            <li><a href="#">ali</a> </li>
-        </section> -->
 
     </section>
 
-    <!-- /*****************************************************************************/ -->
+  <!-- /**************************** part two *************************************************/ -->
     <section class="col-sm-7 More" >
 
-        <div class="col-sm-12 AboutMe row" style="background-color: #f6f0ff;">
+        <div class="col-sm-12 AboutMe row" style="background-color: white; border-radius: 10px">
             <section class="col-sm-12">
                 <textarea class="form-control" style="min-height: 100px; max-height: 100px;"> </textarea>
                 <br>
@@ -54,15 +46,19 @@
         <!-- /************** posts********************* -->
         <div class="col-sm-12 row Post" *ngFor="let p of posts">
 
-          <section class="col-sm-12">
-            <img style="float: left;" class="userImagePost" [src]="p.image">
+          <section class="w-100 d-flex justify-content-between" >
+            <section>
+              <img  class="userImagePost" [src]="p.image">
+              <strong class="p-2">{{p.name}}</strong>
+            </section>
 
-            <section class="offset-1">
-              <strong>{{p.name}}</strong>
-              <span> . {{p.time}}</span>
+
+            <section class="align-self-center">
+              <span style="font-size: small"> {{p.time}}</span>
             </section>
 
           </section>
+
 
             <section class="col-sm-12"  style="margin-top:20px">
                 {{p.post}}
@@ -75,22 +71,19 @@
 
     </section>
 
-     <!-- /*****************************************************************************/ -->
-    <section class="col-sm-2 Rate">
-        <p><strong> Products </strong>   </p>
-      <h3 class="align-self-center">{{process.products}}</h3>
+  <!-- /************************** end part two***************************************************/ -->
+  <section class="col-sm-2 Rate">
+    <h3><strong> Products </strong></h3>
+    <h4 class="align-self-center">{{process.products}}</h4>
+    <hr>
 
-        <hr>
+    <h3><strong> Clients </strong></h3>
+    <h4 class="align-self-center">{{process.clients}}</h4>
+    <hr>
 
-        <p><strong> Clients </strong> </p>
-      <h3 class="align-self-center">{{process.clients}}</h3>
+    <h3><strong> Rating </strong></h3>
+    <h4 class="align-self-center">{{process.rating}}</h4>
 
-      <hr>
-
-
-        <p><strong> Rating </strong> </p>
-      <h3 class="align-self-center">{{process.rating}}</h3>
-
-    </section>
+  </section>
 
 </div>

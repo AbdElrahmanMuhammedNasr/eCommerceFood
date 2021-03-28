@@ -1,40 +1,21 @@
-.User{
-    background-color: #f0f0f0;
-    box-shadow: 0px 0px 10px #a7a7a7;
-    text-align: center;
-    padding:20px;
-    height: 100vh;
-
-}
-.User .userImage{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.User {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #a7a7a7;
+  text-align: center;
+  padding: 20px;
+  height: 30%;
 
 }
 
-.User li{
-    list-style-type: none;
-    width: 50px;
-    height: 50px;
-    padding:15px;
-    border-radius: 50%;
-    background-color: #cecece;
-    margin:auto;
-    overflow: hidden;
-}
-.User li:hover{
-    background: linear-gradient(to right, #002fff, #08c4d1);
-}
-
-.User li a:hover{
-    color: white;
-}
-
-.User li a{
-    list-style-type: none;
+.User .userImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 
 }
+
+
 /*********************************************/
 
 .More {
@@ -43,17 +24,21 @@
 }
 
 .More .AboutMe {
-  background-color: #e8eaeb;
+  background-color: #007bff;
   padding: 20px;
   box-shadow: 0px 0px 10px #a7a7a7;
+  color: white;
+  border-radius: 5px;
 
 }
 
-.More .Post{
-    margin-top:30px ;
-    background-color: #f0f0f0;
-    padding: 20px;
-    box-shadow: 0px 0px 10px #a7a7a7;
+.More .Post {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #a7a7a7;
+  border-radius: 10px;
+
 }
 
 .More .Post .userImagePost{
@@ -67,13 +52,13 @@
 
 /*********************************************/
 
-.Rate{
-    background-color: #f0f0f0;
-    padding: 20px;
-    box-shadow: 0px 0px 10px #a7a7a7;
-    text-align: center;
-    height: 100vh;
-
+.Rate {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #a7a7a7;
+  text-align: center;
+  padding: 20px;
+  height: 30%;
 
 }
 

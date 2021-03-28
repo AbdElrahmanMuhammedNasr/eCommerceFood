@@ -1,17 +1,8 @@
-.TheImage{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url('./ss.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    filter: blur(0px);
-    
-  }
+
   .TheMainContiner{
-  
+
   }
-  
+
   .Alart{
     text-align: center;
     height: 50px;
@@ -20,11 +11,11 @@
       font-size: 20px;
     letter-spacing: 2px;
   }
-  
+
   label{
       font-size: 16px;
   }
-  
+
   .myClass{
       position: absolute;
       padding: 20px;
@@ -33,7 +24,7 @@
       box-shadow: 1px 2px 4px #00000080;
       top: 30vh;
       left:35vw;
-  
+
   }
   input{
       text-align: center;
@@ -45,7 +36,7 @@
   button[type=button]{
       margin-top: 15px;
   }
-  
+
   ::-webkit-scrollbar{
     display: none;
   }

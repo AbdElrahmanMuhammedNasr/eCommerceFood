@@ -28,16 +28,15 @@ export class CategoryComponent implements OnInit {
         mainCategory: 'Drinks'
       },
       {
-        categoryImage: 'https://cdn.pixabay.com/photo/2018/03/13/11/39/fruit-3222313__340.jpg',
-        categoryName: 'Smoothie',
-        mainCategory: 'Sweet'
-      },
-      {
         categoryImage: 'https://cdn.pixabay.com/photo/2019/09/23/16/10/manipulation-4499010_960_720.jpg',
         categoryName: 'Sports Drinks',
         mainCategory: 'Sweet'
       },
-
+      {
+        categoryImage: 'https://cdn.pixabay.com/photo/2018/03/13/11/39/fruit-3222313__340.jpg',
+        categoryName: 'Smoothie',
+        mainCategory: 'Sweet'
+      },
 
       {
         categoryImage: 'https://cdn.pixabay.com/photo/2016/06/30/18/49/sardines-1489626__340.jpg',

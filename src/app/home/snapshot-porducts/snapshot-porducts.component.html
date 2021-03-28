@@ -1,5 +1,5 @@
+<h1 style="margin: 5px 15px">Fish</h1>
 <div style="width: 90%; margin: auto;" class="row">
-
     <div class="col-sm-2 Product" *ngFor="let productShapshot of productShapshots" (click)='onGoToDetails()'>
         <img class="ProductImg" [src]="productShapshot.image">
         <p class="card-text text-muted" style="font-size: large">{{productShapshot.name}}</p>

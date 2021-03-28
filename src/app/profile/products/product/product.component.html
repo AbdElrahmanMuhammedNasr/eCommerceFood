@@ -1,33 +1,24 @@
 <div class="row">
 
-<div
-     style="
-    border: 2px solid #c8c8c8;
-    border-radius: 50px 0px 50px  0px; 
-    padding: 20px;
-    margin:10px auto;
-    cursor: pointer;
-    background-color: #eeeeee;"
-    *ngFor="let product of products"
+<div class="product"
+     *ngFor="let product of products"
      (click)="onGoToDetails()">
 
-    <div >
-      <div class="profile-img">
-        <img [src]="product.image"  style="height: 20vh; width: 100%; border-radius: 50px 0px;" >
-      </div>
-      <br>
+  <div>
+    <div class="profile-img">
+      <img [src]="product.image" style="height: 20vh; width: 100%; border-radius: 50px 0px;">
+    </div>
+    <br>
 
-        <h5 class="margin-tb-20"><b>{{product.name}}</b></h5>
+    <h5 class="margin-tb-20"><b>{{product.name}}</b></h5>
         <p>this is dic for product</p>
         <p style="color: #ff6600; font-size: 20px;">{{product.price}} EGP</p>
 
-  
 
-    </div><!-- counter -->
+  </div><!-- counter -->
     <button  class="btn btn-danger" style="float: left;" >Delete</button>
     <br><br>
 
-    <!-- <button  class="btn btn-primary" style="float: right;" >Order</button> -->
 
   </div><!-- col-md-4 -->
 
