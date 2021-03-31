@@ -1,42 +1,8 @@
-
-  .TheMainContiner{
-
-  }
-
-  .Alart{
-    text-align: center;
-    height: 50px;
-  }
-  .Alart span {
-      font-size: 20px;
-    letter-spacing: 2px;
-  }
-
-  label{
-      font-size: 16px;
-  }
-
-  .myClass{
-      position: absolute;
-      padding: 20px;
-      width: 35vw;
-      border-radius: 30px 0px;
-      box-shadow: 1px 2px 4px #00000080;
-      top: 30vh;
-      left:35vw;
-
-  }
-  input{
-      text-align: center;
-  }
-  button[type=submit]{
-      margin-top: 10px;
-      width: 100%;
-  }
-  button[type=button]{
-      margin-top: 15px;
-  }
-
-  ::-webkit-scrollbar{
-    display: none;
-  }
+.sign-container{
+  width: 50%;
+  margin: 200px auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;
+  padding: 20px;
+  border-radius: 10px;
+}

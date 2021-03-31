@@ -17,10 +17,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   onLoginDataFunction() {
-   
+
   }
 
-  onGoToSignUpForm() {
-    this.router.navigate(['/signUp'])
-  }
+  // onGoToSignUpForm() {
+  //   this.router.navigate(['/signUp'])
+  // }
 }
