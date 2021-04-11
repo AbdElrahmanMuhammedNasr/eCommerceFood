@@ -24,6 +24,12 @@ import { SnapshotPorductsComponent } from './home/snapshot-porducts/snapshot-por
 import { ProductDetailsComponent } from './home/snapshot-porducts/product-details/product-details.component';
 import { AddProductComponent } from './profile/add-product/add-product.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import { MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -50,6 +56,8 @@ import { FooterComponent } from './footer/footer.component';
     ProductDetailsComponent,
     AddProductComponent,
     FooterComponent,
+  //
+
 
   ],
   imports: [
@@ -57,6 +65,16 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     AppRouting,
     HttpClientModule,
+    BrowserAnimationsModule,
+    //
+    MatFormFieldModule,
+    MatIconModule,
+    MatMenuModule,
+    MatCardModule,
+    MatTableModule
+
+
+    //
     // StoreModule.forRoot({}),
 
 

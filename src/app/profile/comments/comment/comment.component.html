@@ -6,10 +6,26 @@
         <span><strong>{{c.name}}</strong> </span> . <span class="text-muted">{{c.time}}</span>
       </div>
 
-      <div style="float: right">
-        <span class="fa fa-recycle" style="cursor: pointer"  title="Report To Admin" ></span>
-        <span class="fa fa-trash" style="cursor: pointer; color: orangered; margin: 0px 20px" title="Delete Comment" ></span>
+      <div class="float-right" style="position: absolute;right: 0px;">
+        <button style="border: transparent !important;" class="btn" mat-icon-button [matMenuTriggerFor]="menu"
+                aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+          <button class="btn" mat-menu-item>
+            <mat-icon>report</mat-icon>
+            <span>Report</span>
+          </button>
+
+
+          <button class="btn" mat-menu-item>
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu>
       </div>
+
     </section>
 
     <section class="col-sm-12" style="padding-top:10px">

@@ -14,18 +14,25 @@
         <section class="d-flex justify-content-around w-100">
           <a [href]="userData.socialMedia[0]" style="font-size: x-large" class="fa fa-facebook"></a>
           <a [href]="userData.socialMedia[1]" style="font-size: x-large" class="fa fa-youtube"></a>
+
         </section>
 
       </section>
 
+
     </section>
 
   <!-- /**************************** part two *************************************************/ -->
+
+
+
     <section class="col-sm-7 More" >
 
         <div class="col-sm-12 AboutMe row" style="background-color: white; border-radius: 10px">
             <section class="col-sm-12">
                 <textarea class="form-control" style="min-height: 100px; max-height: 100px;"> </textarea>
+
+
                 <br>
               <button class="btn btn-primary">Post</button>
             </section>
@@ -33,40 +40,67 @@
         <br><br>
 
 
-        <div class="col-sm-12 AboutMe row">
-            <section class="col-sm-12">
-                <h3 style="float: left;">About</h3>
-            </section>
+<!--        <div class="col-sm-12 AboutMe row">-->
+<!--            <section class="col-sm-12">-->
+<!--                <h3 style="float: left;">About</h3>-->
+<!--            </section>-->
 
-            <section class="col-sm-12" style="margin-top:20px">
-               {{userData.about}}
-            </section>
-        </div>
-
-        <!-- /************** posts********************* -->
-        <div class="col-sm-12 row Post" *ngFor="let p of posts">
-
-          <section class="w-100 d-flex justify-content-between" >
-            <section>
-              <img  class="userImagePost" [src]="p.image">
-              <strong class="p-2">{{p.name}}</strong>
-            </section>
+<!--            <section class="col-sm-12" style="margin-top:20px">-->
+<!--               {{userData.about}}-->
+<!--            </section>-->
+<!--        </div>-->
 
 
-            <section class="align-self-center">
-              <span style="font-size: small"> {{p.time}}</span>
-              <span class="m-3 fa fa-trash" style="cursor: pointer; color: orangered; font-size: larger" title="Delete Post" ></span>
-            </section>
+      <!-- /************** posts********************* -->
 
-          </section>
+      <mat-card class="example-card bg-white text-dark " style="margin: 10px auto" *ngFor="let p of posts">
+        <mat-card-header>
+
+          <div mat-card-avatar class="example-header-image"></div>
+
+          <mat-card-title>{{p.name}}</mat-card-title>
+
+          <div class="float-right" style="position: absolute;right: 0px;">
+            <button style="border: transparent !important;" class="btn" mat-icon-button [matMenuTriggerFor]="menu"
+                    aria-label="Example icon-button with a menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+
+            <mat-menu #menu="matMenu" >
+              <button class="btn" mat-menu-item>
+                <mat-icon>report</mat-icon>
+                <span>Report</span>
+              </button>
 
 
-            <section class="col-sm-12"  style="margin-top:20px">
-                {{p.post}}
-            </section>
+              <button class="btn" mat-menu-item>
+                <mat-icon>delete</mat-icon>
+                <span>Delete</span>
+              </button>
+            </mat-menu>
+          </div>
 
 
-        </div>
+          <mat-card-subtitle class="text-dark">{{p.time}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{p.post}}
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="btn"  mat-button>LIKE</button>
+          <button class="btn" mat-button>DisLike</button>
+        </mat-card-actions>
+      </mat-card>
+
+
+
+
         <!-- /********************enf post*************************** -->
 
 

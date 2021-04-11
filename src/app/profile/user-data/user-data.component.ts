@@ -40,73 +40,48 @@ export class UserDataComponent implements OnInit {
         image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
         name: 'Asmaa',
         time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
+        post: ' oil is a mixture The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n' +
+          '            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n' +
+          '            bred for hunting. of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
       },
       {
         image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
         name: 'Asmaa',
         time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,It is actually a combination soil, It is actually a combination soil,    normally equal parts of clay,'
+        post: ' oil is a mixture The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n' +
+          '            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n' +
+          '            bred for hunting. of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
+      },  {
+        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
+        name: 'Asmaa',
+        time: '12:30 am',
+        post: ' oil is a mixture The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n' +
+          '            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n' +
+          '            bred for hunting. of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
       },
       {
         image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
         name: 'Asmaa',
         time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil, It is actually a combination soil, It is actually a combination soil,   normally equal parts of clay,'
+        post: ' oil is a mixture The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n' +
+          '            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n' +
+          '            bred for hunting. of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
+      },  {
+        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
+        name: 'Asmaa',
+        time: '12:30 am',
+        post: ' oil is a mixture The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n' +
+          '            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n' +
+          '            bred for hunting. of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
       },
       {
         image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
         name: 'Asmaa',
         time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
-      }, {
-        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
-        name: 'Asmaa',
-        time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
+        post: ' oil is a mixture The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n' +
+          '            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n' +
+          '            bred for hunting. of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
       },
-      {
-        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
-        name: 'Asmaa',
-        time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,It is actually a combination soil, It is actually a combination soil,    normally equal parts of clay,'
-      },
-      {
-        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
-        name: 'Asmaa',
-        time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil, It is actually a combination soil, It is actually a combination soil,   normally equal parts of clay,'
-      },
-      {
-        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
-        name: 'Asmaa',
-        time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
-      }, {
-        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
-        name: 'Asmaa',
-        time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
-      },
-      {
-        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
-        name: 'Asmaa',
-        time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,It is actually a combination soil, It is actually a combination soil,    normally equal parts of clay,'
-      },
-      {
-        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
-        name: 'Asmaa',
-        time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil, It is actually a combination soil, It is actually a combination soil,   normally equal parts of clay,'
-      },
-      {
-        image: 'https://cdn.pixabay.com/photo/2015/11/20/10/36/nymph-1052750__340.jpg',
-        name: 'Asmaa',
-        time: '12:30 am',
-        post: ' oil is a mixture of soil that is the ideal plant-growing medium.  It is actually a combination soil,   normally equal parts of clay,'
-      },
-
     ];
   }
 

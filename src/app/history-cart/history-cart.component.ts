@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-history-cart',
@@ -7,50 +7,56 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoryCartComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   carts = [];
   totalPrice = 0;
+
+
+  displayedColumns: string[] = ['image', 'name', 'price', 'time', 'chef'];
+  dataSource;
+
   ngOnInit(): void {
 
     this.carts = [
       {
-      image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
-      name: 'Stack',
-      time: '3:40 Am',
-      price: 20,
-      chef: 'Tamer'
-    },
-    {
-      image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
-      name: 'Stack',
-      time: '3:40 am',
-      price: 20,
-      chef: 'Tamer'
-    },
-    {
-      image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
-      name: 'Stack',
-      time: '3:40 am',
-      price: 20,
-      chef: 'Tamer'
-    },
-    {
-      image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
-      name: 'Stack',
-      time: '2:40 pm',
-      price: 30,
-      chef: 'Tamer'
-    },
-    {
-      image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
-      name: 'Stack',
-      time: '3:40 Am',
-      price: 20,
-      chef: 'Tamer'
-    },
-    {
-      image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
+        image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
+        name: 'Stack',
+        time: '3:40 Am',
+        price: 20,
+        chef: 'Tamer'
+      },
+      {
+        image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
+        name: 'Stack',
+        time: '3:40 am',
+        price: 20,
+        chef: 'Tamer'
+      },
+      {
+        image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
+        name: 'Stack',
+        time: '3:40 am',
+        price: 20,
+        chef: 'Tamer'
+      },
+      {
+        image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
+        name: 'Stack',
+        time: '2:40 pm',
+        price: 30,
+        chef: 'Tamer'
+      },
+      {
+        image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
+        name: 'Stack',
+        time: '3:40 Am',
+        price: 20,
+        chef: 'Tamer'
+      },
+      {
+        image: 'https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132__340.jpg',
       name: 'Stack',
       time: '3:40 Am',
       price: 40,
@@ -145,11 +151,17 @@ export class HistoryCartComponent implements OnInit {
         price: 20,
         chef: 'Tamer'
       }
-  ];
+    ];
 
     this.carts.map(e => {
-    this.totalPrice += e.price;
+      this.totalPrice += e.price;
     });
+
+    this.dataSource = this.carts;
   }
 
+
+  applyFilter(event): void {
+    console.log(event);
+  }
 }
